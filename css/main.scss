@@ -1,14 +1,17 @@
 $primary-color: #eabc95;
 $font-stack: Futura;
 
-html, body {
+html,
+body {
     font: 100% $font-stack;
     margin: 0;
     overflow-y: hidden;
 }
+
 button:hover {
     cursor: pointer
 }
+
 #main {
     min-height: 100vh;
     min-width: 100vw;
@@ -16,31 +19,31 @@ button:hover {
     background-size: cover;
     text-align: center;
     #logo {
-            max-width: 86px;
-            margin-top: 10px;
-        }    
+        max-width: 86px;
+        margin-top: 10px;
+    }
     #character-creation {
         min-height: 500px;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4);
         padding: 50px;
         margin: 50px;
         border: none;
         border-radius: 20px;
-        box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
-        h2{
+        box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
+        h2 {
             font-family: $font-stack;
             text-transform: uppercase;
             color: $primary-color;
             border-bottom: solid 1px $primary-color;
             padding-bottom: 5px;
             display: inline-block;
-            font-weight: 100;           
+            font-weight: 100;
         }
         #char-name {
             font-family: $font-stack;
             font-weight: lighter;
             width: 90%;
-            padding: 10px; 
+            padding: 10px;
             border: none;
             color: $primary-color;
             background-color: transparent;
@@ -49,7 +52,7 @@ button:hover {
                 outline: none;
             }
             &::placeholder {
-                color: $primary-color;                
+                color: $primary-color;
             }
         }
         #character-image {
@@ -57,7 +60,7 @@ button:hover {
             width: 100%;
         }
         #fields {
-            .character-buttons{
+            .character-buttons {
                 font-family: $font-stack;
                 width: 90%;
                 background-color: #2e2e39;
@@ -76,7 +79,7 @@ button:hover {
                 font-family: $font-stack;
                 font-weight: bold;
                 width: 90%;
-                background-color: rgba(255,255,255,0.7);
+                background-color: rgba(255, 255, 255, 0.7);
                 border: none;
                 margin-top: 10px;
                 color: black;
@@ -85,25 +88,28 @@ button:hover {
                 outline: none;
                 margin-top: 40px;
                 &:hover {
-                    background-color: rgba(0,0,0,0.5);
+                    background-color: rgba(0, 0, 0, 0.5);
                     color: white;
                 }
             }
         }
     }
 }
+
 .warrior-img {
     background-image: url('../images/warrior.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .rogue-img {
     background-image: url('../images/rogue.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .mage-img {
     background-image: url('../images/mage.png');
     background-size: contain;
