@@ -1,5 +1,11 @@
 html, body {
+  font: 100% Futura;
   margin: 0;
+  overflow-y: hidden;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 #main {
@@ -15,32 +21,44 @@ html, body {
 }
 #main #character-creation {
   min-height: 500px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 50px;
+  margin: 50px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
 }
 #main #character-creation h2 {
+  font-family: Futura;
   text-transform: uppercase;
-  color: white;
-  border-bottom: solid 1px white;
+  color: #eabc95;
+  border-bottom: solid 1px #eabc95;
   padding-bottom: 5px;
+  display: inline-block;
+  font-weight: 100;
 }
 #main #character-creation #char-name {
+  font-family: Futura;
+  font-weight: lighter;
   width: 90%;
   padding: 10px;
   border: none;
-  color: white;
+  color: #eabc95;
   background-color: transparent;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #eabc95;
 }
-#main #character-creation #char-name:hover {
+#main #character-creation #char-name:focus {
   outline: none;
 }
 #main #character-creation #char-name::placeholder {
-  color: inherit;
+  color: #eabc95;
 }
 #main #character-creation #character-image {
   height: 100%;
   width: 100%;
 }
 #main #character-creation #fields .character-buttons {
+  font-family: Futura;
   width: 90%;
   background-color: #2e2e39;
   border: none;
@@ -49,22 +67,46 @@ html, body {
   padding: 10px 0;
   border-radius: 50px;
   box-shadow: 0px 5px 5px 1px black;
+  outline: none;
+}
+#main #character-creation #fields .character-buttons:hover {
+  font-size: 1.2rem;
+}
+#main #character-creation #fields #confirm-button {
+  font-family: Futura;
+  font-weight: bold;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  margin-top: 10px;
+  color: black;
+  padding: 10px 0;
+  border-radius: 50px;
+  outline: none;
+  margin-top: 40px;
+}
+#main #character-creation #fields #confirm-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .warrior-img {
   background-image: url("../images/warrior.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .rogue-img {
   background-image: url("../images/rogue.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .mage-img {
   background-image: url("../images/mage.png");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 }

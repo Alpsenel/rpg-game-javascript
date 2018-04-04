@@ -51,6 +51,30 @@ function setupButtons() {
             }
         });
     }
-}
-    
+}    
 setupButtons();
+let regex = RegExp('img$');
+$('#confirm-button').on('click', function(){
+    if( $('#char-name').val() != '' && regex.test(chrImages.attr('class'))){
+        
+        let characterName = $('#char-name').val();
+        
+        //retrieve the classes on the div element 
+        let classes = document.getElementById('character-images').className.split(/\s+/);
+        //select the last element to reach user's selected character
+        let className = classes[classes.length-1];
+        switch(className){
+            case 'warrior-img':
+                let char1 = new Hero(characterName,100,5,'Male','Human');
+                characterName.health = 300;
+                console.log(char1);
+                document.cookie('back_to_url_onPage_')
+                document.cookie('char1',char1);
+                break;
+        }
+        console.log(char1);    
+    }
+    else{
+        alert('something missing');
+    }
+});
